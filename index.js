@@ -34,97 +34,125 @@ client.on('message', (message) => {
 
   if(message.content == 'ping') {
     return message.reply('pong');
+  }
+  if(message.content == "!명령어"){
+    return message.reply("ㅋㅋ,이잉,딱대,지건,**아(이름)");
 }
-  if(message.content == "!명령어") {
-    return message.reply.send("ㅋㅋ,이잉,딱대,지건,**아(이름)");
+
+  if(message.content == "준비됐어 지?"){
+    return message.reply("물론이지. 환 (괴물쥐 on)");
 }
-  if(message.content == "준비됐어 지?") {
-    return message.reply.send("물론이지. 환 (괴물쥐 on)");
-}
+
   if(message.content == "쓰흡"){
-    return message.reply.send("치이이이이이익");
+    return message.reply("치이이이이이익");
 }
+
   if(message.content == "ㅋㅋ"){
-    return message.reply.send("루빵삥뽕");
-} 
+    return message.reply("루빵삥뽕");
+}
+
   if(message.content == "이잉"){
-    return message.reply.send("기뮤뤼잉~");
+    return message.reply("기뮤뤼잉~");
 }
+
   if(message.content == "딱대"){
-    return message.reply.send("시발");
-}    
+    return message.reply("시발");
+  } 
+
   if(message.content =="지건"){
-    return message.reply.send("딱대 시발!");
-}
+    return message.reply("딱대 시발!");
+  }
+
   if(message.content == "세환아"){
-    return message.reply.send("공무원 시험 합격은 에듀윌");
-} 
+    return message.reply("공무원 시험 합격은 에듀윌");
+  }
+
   if(message.content == "지훈아"){
-    return message.reply.send("아앙~기분조아~");
-}
+    return message.reply("아앙~기분조아~");
+  }
+
   if(message.content == "찬욱아"){
-    return message.reply.send("까미 출현 딱대");
-}
+    return message.reply("까미 출현 딱대");
+  }
+
   if(message.content == "상훈아"){
-    return message.reply.send("에~에~");
-}
+    return message.reply("에~에~");
+  }
+
   if(message.content == "시원아"){
-    return message.reply.send("말대꾸 하지마!!!!!!!!!");
-}
+    return message.reply("말대꾸 하지마!!!!!!!!!");
+  }
+
   if(message.content == "도헌아"){
-    return message.reply.send("물 마시다 뒤졌냐?");
-}
+    return message.reply("물 마시다 뒤졌냐?");
+  }
+
   if(message.content == "도헌이"){
-    return message.reply.send("또 뒤졌네 그만뒤져!!!!!!!!!!!!");
-}
+    return message.reply("또 뒤졌네 그만뒤져!!!!!!!!!!!!");
+  }
+
   if(message.content == "강훈아"){
-    return message.reply.send("쉐엣~");
-}
+    return message.reply("쉐엣~");
+  }
+
   if(message.content == "성민아"){
-    return message.reply.send("타다아악!!!!!!!!!");
-}
+    return message.reply("타다아악!!!!!!!!!");
+  }
+
   if(message.content == "지원아"){
-    return message.reply.send("ㄷㅊ그냥  숨도 쉬지마");
-}
+    return message.reply("ㄷㅊ그냥  숨도 쉬지마");
+  }
+
   if(message.content == "용은아"){
-    return message.reply.send("미안한데");
-}
+    return message.reply("미안한데");
+  }
+
   if(message.content == "솔지야"){
-    return message.reply.send("아진짜?");
-}
+    return message.reply("아진짜?");
+  }
+
   if(message.content == "얼음아"){
-    return message.reply.send("난다요");
-}
+    return message.reply("난다요");
+  }
+
   if(message.content == "나경아"){
-    return message.reply.send("네 이나경 전화 받았습니다");
-}
+    return message.reply("네 이나경 전화 받았습니다");
+  }
+
   if(message.content == "까미야"){
-    return message.reply.send("찬욱: 왜불렁~");
-}
+    return message.reply("찬욱: 왜불렁~");
+  }
+
   if(message.content == "지환아"){
-    return message.reply.send("역겨워");
-}
+    return message.reply("역겨워");
+  }
+
   if(message.content =="지훈"){
-    return message.reply.send("넣을게...");
-}
+    return message.reply("넣을게...");
+  }
+
   if(message.content == "호길아"){
-    return message.reply.send("이거 맞아?");
-}                           
+    return message.reply("이거 맞아?");
+  }  
+
   if(message.content == "범수야"){
-    return message.reply.send("느려");
-}
+    return message.reply("느려");
+  }
+
   if(message.content == "리치야"){
-    return message.reply.send("야옹~");
-}
+    return message.reply("야옹~");
+  }
+
   if(message.content == "주언아"){
-    return message.reply.send("Not Bad.");
-}
+    return message.reply("Not Bad.");
+  }
+  
   if(message.content == "루이야"){
-    return message.reply.send("망! 망!");
+    return message.reply("망! 망!");
   }
   if(message.content == "재훈아"){
-    return message.reply.send("뭔데");
-   }
+    return message.reply("뭔데");
+  }
 
   if(message.content == '괴물쥐 소개') {
     let img = 'https://ww.namu.la/s/2afc61b884339ea4981262dc5c2bc667e2bbf58ab51aa2ddfb5ffedd43b1b1c1b1a7833ee9d5c5fd6c55a48feb82d6939abb353291f76006d7e65e0a35a78a6de3f0a0a0301b247cb4fe0acf900ff122f60dbe1eb4ec95ea90d791ef2f208df37f5779cf3ce0caeb07c5ab7b59df33a4';
@@ -145,7 +173,7 @@ client.on('message', (message) => {
       .addField('LOL닉네임','괴물쥐\n다이아들 죽어',true)
       .addField('주 포지션', '원거리 딜러', true)
       .addField('소속사', 'charon eSports&Entertainment')
-      .addField('방송 링크', '유튜브:https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA/about\n트위치:https://www.twitch.tv/tmxk319\n아프키라TV:http://bj.afreecatv.com/tmxk319\n트게더:https://tgd.kr/member/login_page?next=%2F')
+      .addField('방송 링크', '\n유튜브:https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA/about\n트위치:https://www.twitch.tv/tmxk319\n아프키라TV:http://bj.afreecatv.com/tmxk319\n트게더:https://tgd.kr/member/login_page?next=%2F')
       .addBlankField()
       .setTimestamp()
       .setFooter('찬욱이가 만듬', img)
