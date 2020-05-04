@@ -129,9 +129,9 @@ client.on('message', (message) => {
   if(message.content == '괴물쥐 소개') {
     let img = 'https://ww.namu.la/s/2afc61b884339ea4981262dc5c2bc667e2bbf58ab51aa2ddfb5ffedd43b1b1c1b1a7833ee9d5c5fd6c55a48feb82d6939abb353291f76006d7e65e0a35a78a6de3f0a0a0301b247cb4fe0acf900ff122f60dbe1eb4ec95ea90d791ef2f208df37f5779cf3ce0caeb07c5ab7b59df33a4';
     let embed = new Discord.RichEmbed()
-      .setTitle('괴물쥐')
-      .setURL('https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA')
-      .setAuthor('찬욱', img, 'https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA')
+      .setTitle('괴물쥐 나무위키')
+      .setURL('https://namu.wiki/w/%EA%B4%B4%EB%AC%BC%EC%A5%90')
+      .setAuthor('괴물쥐', img, 'https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA')
       .setThumbnail(img)
       .addBlankField()
       .addField('본명', '장지환')
@@ -145,21 +145,21 @@ client.on('message', (message) => {
       .addField('LOL닉네임','괴물쥐\n다이아들 죽어',true)
       .addField('주 포지션', '원거리 딜러', true)
       .addField('소속사', 'charon eSports&Entertainment')
-      .addField('방송 링크','유튜브:https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA/about\n트위치:https://www.twitch.tv/tmxk319\n아프키라TV:http://bj.afreecatv.com/tmxk319\n트게더:https://tgd.kr/member/login_page?next=%2F')
+      .addField('방송 링크', '유튜브:https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA/about\n트위치:https://www.twitch.tv/tmxk319\n아프키라TV:http://bj.afreecatv.com/tmxk319\n트게더:https://tgd.kr/member/login_page?next=%2F')
       .addBlankField()
       .setTimestamp()
       .setFooter('찬욱이가 만듬', img)
 
     message.channel.send(embed)
   } else if(message.content == '!help') {
-    let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
+    let helpImg = 'https://i.ytimg.com/vi/4BMWm724im8/hqdefault.jpg';
     let commandList = [
       {name: '!help', desc: 'help'},
       {name: 'ping', desc: '현재 핑 상태'},
-      {name: '괴물쥐 소개', desc: 'embed 예제1'},
+      {name: '괴물쥐 프로필', desc: '괴물쥐 소개'},
       {name: '!공지사항', desc: 'dm으로 전체 공지 보내기'},
       {name: '!공지사항2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
-      {name: '!청소', desc: '텍스트 지움'},
+      {name: '!삭제', desc: '텍스트 지움(예:!삭제 1)'},
       {name: '!초대', desc: '해당 채널의 초대 코드 표기'},
       {name: '!초대2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
     ];
