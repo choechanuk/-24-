@@ -219,7 +219,7 @@ client.on('message', (message) => {
     });
   } else if(message.content == '!초대') {
     if(message.channel.type == 'dm') {
-      return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
+      return message.reply('나한테 보내지마!!!!!!!!!!');
     }
     message.guild.channels.get(message.channel.id).createInvite({maxAge: 0}) // maxAge: 0은 무한이라는 의미, maxAge부분을 지우면 24시간으로 설정됨
       .then(invite => {
@@ -266,7 +266,7 @@ client.on('message', (message) => {
     }
   } else if(message.content.startsWith('!삭제')) {
     if(message.channel.type == 'dm') {
-      return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
+      return message.reply('나한테 보내지마!!!!!!!!!!');
     }
     
     if(message.channel.type != 'dm' && checkPermission(message)) return
@@ -275,7 +275,7 @@ client.on('message', (message) => {
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
-      message.channel.send("1부터 100까지의 숫자만 입력해주세요.")
+      message.channel.send("1부터 100까지 숫자만 입력해라.")
       return;
     } else if(!isNum) { // c @찬욱 3
       if(message.content.split('<@').length == 2) {
@@ -298,7 +298,7 @@ client.on('message', (message) => {
     } else {
       message.channel.bulkDelete(parseInt(clearLine)+1)
         .then(() => {
-          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "개의 메시지를 삭제했습니다. (이 메세지는 잠시 후에 사라집니다.)");
+          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "네이스~ 다 지워 버려~~~~~ (이 메세지는 잠시 후에 사라집니다.)");
         })
         .catch(console.error)
     }
@@ -307,7 +307,7 @@ client.on('message', (message) => {
 
 function checkPermission(message) {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) {
-    message.channel.send(`<@${message.author.id}> ` + "명령어를 수행할 관리자 권한을 소지하고 있지않습니다.")
+    message.channel.send(`<@${message.author.id}> ` + "너가 관리자야?")
     return true;
   } else {
     return false;
