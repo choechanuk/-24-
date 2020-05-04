@@ -1,14 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.argv.length == 2 ? process.env.token : "";
-const welcomeChannelName = "안녕하세요";
-const byeChannelName = "안녕히가세요";
-const welcomeChannelComment = "어서오세요.";
-const byeChannelComment = "안녕히가세요.";
+const welcomeChannelName = "ㅎㅇ";
+const byeChannelName = "ㅂㅇ";
+const welcomeChannelComment = "이잉~기묘륑";
+const byeChannelComment = "나가!!!!!!!!!!!!!";
 
 client.on('ready', () => {
-  console.log('켰다.');
-  client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
+  console.log('online');
+  client.user.setPresence({ game: { name: '!help를 입력하세요.' }, status: 'online' })
 });
 
 client.on("guildMemberAdd", (member) => {
@@ -34,24 +34,121 @@ client.on('message', (message) => {
 
   if(message.content == 'ping') {
     return message.reply('pong');
+}
+  if(message.content == "!명령어") {
+    return message.reply.send("ㅋㅋ,이잉,딱대,지건,**아(이름)");
+}
+  if(message.content == "준비됐어 지?") {
+    return message.reply.send("물론이지. 환 (괴물쥐 on)");
+}
+  if(message.content == "쓰흡"){
+    return message.reply.send("치이이이이이익");
+}
+  if(message.content == "ㅋㅋ"){
+    return message.reply.send("루빵삥뽕");
+} 
+  if(message.content == "이잉"){
+    return message.reply.send("기뮤뤼잉~");
+}
+  if(message.content == "딱대"){
+    return message.reply.send("시발");
+}    
+  if(message.content =="지건"){
+    return message.reply.send("딱대 시발!");
+}
+  if(message.content == "세환아"){
+    return message.reply.send("공무원 시험 합격은 에듀윌");
+} 
+  if(message.content == "지훈아"){
+    return message.reply.send("아앙~기분조아~");
+}
+  if(message.content == "찬욱아"){
+    return message.reply.send("까미 출현 딱대");
+}
+  if(message.content == "상훈아"){
+    return message.reply.send("에~에~");
+}
+  if(message.content == "시원아"){
+    return message.reply.send("말대꾸 하지마!!!!!!!!!");
+}
+  if(message.content == "도헌아"){
+    return message.reply.send("물 마시다 뒤졌냐?");
+}
+  if(message.content == "도헌이"){
+    return message.reply.send("또 뒤졌네 그만뒤져!!!!!!!!!!!!");
+}
+  if(message.content == "강훈아"){
+    return message.reply.send("쉐엣~");
+}
+  if(message.content == "성민아"){
+    return message.reply.send("타다아악!!!!!!!!!");
+}
+  if(message.content == "지원아"){
+    return message.reply.send("ㄷㅊ그냥  숨도 쉬지마");
+}
+  if(message.content == "용은아"){
+    return message.reply.send("미안한데");
+}
+  if(message.content == "솔지야"){
+    return message.reply.send("아진짜?");
+}
+  if(message.content == "얼음아"){
+    return message.reply.send("난다요");
+}
+  if(message.content == "나경아"){
+    return message.reply.send("네 이나경 전화 받았습니다");
+}
+  if(message.content == "까미야"){
+    return message.reply.send("찬욱: 왜불렁~");
+}
+  if(message.content == "지환아"){
+    return message.reply.send("역겨워");
+}
+  if(message.content =="지훈"){
+    return message.reply.send("넣을게...");
+}
+  if(message.content == "호길아"){
+    return message.reply.send("이거 맞아?");
+}                           
+  if(message.content == "범수야"){
+    return message.reply.send("느려");
+}
+  if(message.content == "리치야"){
+    return message.reply.send("야옹~");
+}
+  if(message.content == "주언아"){
+    return message.reply.send("Not Bad.");
+}
+  if(message.content == "루이야"){
+    return message.reply.send("망! 망!");
   }
+  if(message.content == "재훈아"){
+    return message.reply.send("뭔데");
+   }
 
-  if(message.content == 'embed') {
-    let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
+  if(message.content == '괴물쥐 소개') {
+    let img = 'https://ww.namu.la/s/2afc61b884339ea4981262dc5c2bc667e2bbf58ab51aa2ddfb5ffedd43b1b1c1b1a7833ee9d5c5fd6c55a48feb82d6939abb353291f76006d7e65e0a35a78a6de3f0a0a0301b247cb4fe0acf900ff122f60dbe1eb4ec95ea90d791ef2f208df37f5779cf3ce0caeb07c5ab7b59df33a4';
     let embed = new Discord.RichEmbed()
-      .setTitle('타이틀')
-      .setURL('http://www.naver.com')
-      .setAuthor('나긋해', img, 'http://www.naver.com')
+      .setTitle('괴물쥐')
+      .setURL('https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA')
+      .setAuthor('찬욱', img, 'https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA')
       .setThumbnail(img)
       .addBlankField()
-      .addField('Inline field title', 'Some value here')
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
+      .addField('본명', '장지환')
+      .addField('출생', '1995년 12월 24일(24세)\n대전광역시 대덕구 법동', true)
+      .addField('국적', '대한민국', true)
+      .addField('본관', '인동 장씨', true)
+      .addField('신체','174cm/54kg/O형', true)
+      .addField('병역','사회 복무 요원 소집 해제',true)
+      .addField('유튜브 구독자 수','약52만명',true)
+      .addField('유튜브 총 조회수','약167,000,000회',true)
+      .addField('LOL닉네임','괴물쥐\n다이아들 죽어',true)
+      .addField('주 포지션', '원거리 딜러', true)
+      .addField('소속사', 'charon eSports&Entertainment')
+      .addField('방송 링크','유튜브:https://www.youtube.com/channel/UCDBAVzfX3yZ1hah0FHnOoaA/about\n트위치:https://www.twitch.tv/tmxk319\n아프키라TV:http://bj.afreecatv.com/tmxk319\n트게더:https://tgd.kr/member/login_page?next=%2F')
       .addBlankField()
       .setTimestamp()
-      .setFooter('나긋해가 만듬', img)
+      .setFooter('찬욱이가 만듬', img)
 
     message.channel.send(embed)
   } else if(message.content == '!help') {
@@ -59,18 +156,18 @@ client.on('message', (message) => {
     let commandList = [
       {name: '!help', desc: 'help'},
       {name: 'ping', desc: '현재 핑 상태'},
-      {name: 'embed', desc: 'embed 예제1'},
-      {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
-      {name: '!전체공지2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
+      {name: '괴물쥐 소개', desc: 'embed 예제1'},
+      {name: '!공지사항', desc: 'dm으로 전체 공지 보내기'},
+      {name: '!공지사항2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
       {name: '!청소', desc: '텍스트 지움'},
-      {name: '!초대코드', desc: '해당 채널의 초대 코드 표기'},
-      {name: '!초대코드2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
+      {name: '!초대', desc: '해당 채널의 초대 코드 표기'},
+      {name: '!초대2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of 콜라곰 BOT', helpImg)
+      .setAuthor('Help of 괴물쥐 BOT', helpImg)
       .setColor('#186de6')
-      .setFooter(`콜라곰 BOT ❤️`)
+      .setFooter(`괴물쥐 BOT`)
       .setTimestamp()
     
     commandList.forEach(x => {
@@ -80,7 +177,7 @@ client.on('message', (message) => {
     embed.addField('Commands: ', commandStr);
 
     message.channel.send(embed)
-  } else if(message.content == '!초대코드2') {
+  } else if(message.content == '!초대2') {
     client.guilds.array().forEach(x => {
       x.channels.find(x => x.type == 'text').createInvite({maxAge: 0}) // maxAge: 0은 무한이라는 의미, maxAge부분을 지우면 24시간으로 설정됨
         .then(invite => {
@@ -92,7 +189,7 @@ client.on('message', (message) => {
           }
         })
     });
-  } else if(message.content == '!초대코드') {
+  } else if(message.content == '!초대') {
     if(message.channel.type == 'dm') {
       return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
     }
@@ -105,14 +202,14 @@ client.on('message', (message) => {
           message.channel.send('**'+message.guild.channels.get(message.channel.id).guild.name+'** 채널 권한이 없어 초대코드 발행 실패')
         }
       })
-  } else if(message.content.startsWith('!전체공지2')) {
+  } else if(message.content.startsWith('!공지사항2')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
-      let contents = message.content.slice('!전체공지2'.length);
+      let contents = message.content.slice('!공지사항2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of 콜라곰 BOT')
+        .setAuthor('공지 of 괴물쥐 BOT')
         .setColor('#186de6')
-        .setFooter(`콜라곰 BOT ❤️`)
+        .setFooter(`괴물쥐 BOT`)
         .setTimestamp()
   
       embed.addField('공지: ', contents);
@@ -126,10 +223,10 @@ client.on('message', (message) => {
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
-  } else if(message.content.startsWith('!전체공지')) {
+  } else if(message.content.startsWith('!공지사항')) {
     if(checkPermission(message)) return
     if(message.member != null) { // 채널에서 공지 쓸 때
-      let contents = message.content.slice('!전체공지'.length);
+      let contents = message.content.slice('!공지사항'.length);
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
         x.user.send(`<@${message.author.id}> ${contents}`);
@@ -139,20 +236,20 @@ client.on('message', (message) => {
     } else {
       return message.reply('채널에서 실행해주세요.');
     }
-  } else if(message.content.startsWith('!청소')) {
+  } else if(message.content.startsWith('!삭제')) {
     if(message.channel.type == 'dm') {
       return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
     }
     
     if(message.channel.type != 'dm' && checkPermission(message)) return
 
-    var clearLine = message.content.slice('!청소 '.length);
+    var clearLine = message.content.slice('!삭제 '.length);
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
       message.channel.send("1부터 100까지의 숫자만 입력해주세요.")
       return;
-    } else if(!isNum) { // c @나긋해 3
+    } else if(!isNum) { // c @찬욱 3
       if(message.content.split('<@').length == 2) {
         if(isNaN(message.content.split(' ')[2])) return;
 
