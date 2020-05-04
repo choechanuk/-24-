@@ -179,10 +179,10 @@ client.on('message', (message) => {
       .setFooter('찬욱이가 만듬', img)
 
     message.channel.send(embed)
-  } else if(message.content == '!help') {
+  } else if(message.content == '!미아핑') {
     let helpImg = 'https://i.ytimg.com/vi/4BMWm724im8/hqdefault.jpg';
     let commandList = [
-      {name: '!help', desc: 'help'},
+      {name: '!미아핑', desc: '미아핑'},
       {name: 'ping', desc: '현재 핑 상태'},
       {name: '괴물쥐 프로필', desc: '괴물쥐 소개'},
       {name: '!공지사항', desc: 'dm으로 전체 공지 보내기'},
