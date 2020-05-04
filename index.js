@@ -72,7 +72,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == "찬욱아"){
-    return message.channel.send("까미 출현 딱대");
+    return message.channel.send("@찬욱아 까미 출현 딱대");
   }
 
   if(message.content == "상훈아"){
@@ -124,7 +124,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == "지환아"){
-    return message.channel.send("역겨워");
+    return message.channel.send("역겨워 부르지마");
   }
 
   if(message.content =="지훈"){
