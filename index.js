@@ -72,7 +72,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == "찬욱아"){
-    return message.channel.send("@찬욱아 까미 출현 딱대");
+    return message.channel.send("@찬 욱 까미 출현 딱대");
   }
 
   if(message.content == "상훈아"){
