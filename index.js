@@ -156,6 +156,36 @@ client.on('message', (message) => {
   if(message.content == "괴물쥐"){
     return message.channel.send("왜 불러");
   }
+  if(message.content == '!서버상태') {
+    let embed = new Discord.RichEmbed()
+    let img = 'https://ww.namu.la/s/2afc61b884339ea4981262dc5c2bc667e2bbf58ab51aa2ddfb5ffedd43b1b1c1b1a7833ee9d5c5fd6c55a48feb82d6939abb353291f76006d7e65e0a35a78a6de3f0a0a0301b247cb4fe0acf900ff122f60dbe1eb4ec95ea90d791ef2f208df37f5779cf3ce0caeb07c5ab7b59df33a4';
+    var duration = moment.duration(client.uptime).format(" D [일], H [시간], m [분], s [초]");
+    embed.setColor('#186de6')
+    embed.setAuthor('server info of 괴물쥐BOT', img)
+    embed.setFooter(`괴물쥐BOT `)
+    embed.addBlankField()
+    embed.addField('RAM usage',    `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true);
+    embed.addField('running time', `${duration}`, true);
+    embed.addField('user',         `${client.users.size.toLocaleString()}`, true);
+    embed.addField('server',       `${client.guilds.size.toLocaleString()}`, true);
+    // embed.addField('channel',      `${client.channels.size.toLocaleString()}`, true);
+    embed.addField('Discord.js',   `v${Discord.version}`, true);
+    embed.addField('Node',         `${process.version}`, true);
+    
+    let arr = client.guilds.array();
+    let list = '';
+    list = `\`\`\`css\n`;
+    
+    for(let i=0;i<arr.length;i++) {
+      // list += `${arr[i].name} - ${arr[i].id}\n`
+      list += `${arr[i].name}\n`
+    }
+    list += `\`\`\`\n`
+    embed.addField('list:',        `${list}`);
+
+    embed.setTimestamp()
+    message.channel.send(embed);
+  }
 
   if(message.content == '괴물쥐 프로필') {
     let img = 'https://ww.namu.la/s/2afc61b884339ea4981262dc5c2bc667e2bbf58ab51aa2ddfb5ffedd43b1b1c1b1a7833ee9d5c5fd6c55a48feb82d6939abb353291f76006d7e65e0a35a78a6de3f0a0a0301b247cb4fe0acf900ff122f60dbe1eb4ec95ea90d791ef2f208df37f5779cf3ce0caeb07c5ab7b59df33a4';
@@ -193,6 +223,7 @@ client.on('message', (message) => {
       {name: '!삭제', desc: '텍스트 지움(예:!삭제 1)'},
       {name: '!초대', desc: '해당 채널의 초대 코드 표기'},
       {name: '!초대2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
+      {name: '!서버상태', desc: '서버상태를 표기'}
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
