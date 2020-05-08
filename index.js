@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.argv.length == 2 ? process.env.token : "";
+const moment = require("moment");
+require("moment-duration-format");
 const welcomeChannelName = "ㅎㅇ";
 const byeChannelName = "ㅂㅇ";
 const welcomeChannelComment = "이잉~기묘륑";
@@ -156,6 +158,7 @@ client.on('message', (message) => {
   if(message.content == "괴물쥐"){
     return message.channel.send("왜 불러");
   }
+  
   if(message.content == '!서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://ww.namu.la/s/2afc61b884339ea4981262dc5c2bc667e2bbf58ab51aa2ddfb5ffedd43b1b1c1b1a7833ee9d5c5fd6c55a48feb82d6939abb353291f76006d7e65e0a35a78a6de3f0a0a0301b247cb4fe0acf900ff122f60dbe1eb4ec95ea90d791ef2f208df37f5779cf3ce0caeb07c5ab7b59df33a4';
