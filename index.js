@@ -38,6 +38,7 @@ client.on('message', (message) => {
     return message.reply('pong');
   }
   if(message.content == '!명령어') {
+    return message.reply('@@아(이름),지건,딱대,쓰흡,준비됐어 지?,이잉,ㅋㅋ');
   }
 
   if(message.content == "준비됐어 지?"){
