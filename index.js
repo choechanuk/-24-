@@ -37,6 +37,8 @@ client.on('message', (message) => {
   if(message.content == 'ping') {
     return message.reply('pong');
   }
+  if(message.content == '!명령어') {
+  }
 
   if(message.content == "준비됐어 지?"){
     return message.channel.send("물론이지. 환 (괴물쥐 on)");
@@ -232,7 +234,7 @@ client.on('message', (message) => {
       {name: '!초대', desc: '해당 채널의 초대 코드 표기'},
       {name: '!초대2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
       {name: '!서버상태', desc: '서버상태를 표기'},
-      {neme: "!명령어", desc: "@@아(이름),지건,딱대,쓰흡,준비됐어 지?,이잉,ㅋㅋ"},
+      {name: '!명령어', desc: '@@아(이름),지건,딱대,쓰흡,준비됐어 지?,이잉,ㅋㅋ'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
