@@ -159,6 +159,14 @@ client.on('message', (message) => {
     return message.channel.send("왜 불러");
   }
 
+  if(message.content == "은재야"){
+    return message.channel.send("은공 나와!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+  }
+
+  if(message.content == "승범아"){
+    return message.channel.send("승메이커 출현");
+  }
+
   if(message.content == '!서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://ww.namu.la/s/2afc61b884339ea4981262dc5c2bc667e2bbf58ab51aa2ddfb5ffedd43b1b1c1b1a7833ee9d5c5fd6c55a48feb82d6939abb353291f76006d7e65e0a35a78a6de3f0a0a0301b247cb4fe0acf900ff122f60dbe1eb4ec95ea90d791ef2f208df37f5779cf3ce0caeb07c5ab7b59df33a4';
@@ -219,20 +227,21 @@ client.on('message', (message) => {
     let helpImg = 'https://i.ytimg.com/vi/4BMWm724im8/hqdefault.jpg';
     let commandList = [
       {name: '!미아핑', desc: '미아핑'},
-      {name: 'ping', desc: '현재 핑 상태'},
+      {name: 'ping', desc: '현재 핑 상태(구라핑)'},
       {name: '괴물쥐 프로필', desc: '괴물쥐 소개'},
       {name: '!공지사항', desc: 'dm으로 전체 공지 보내기'},
       {name: '!공지사항2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
       {name: '!삭제', desc: '텍스트 지움(예:!삭제 1)'},
       {name: '!초대', desc: '해당 채널의 초대 코드 표기'},
       {name: '!초대2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
-      {name: '!서버상태', desc: '서버상태를 표기'}
+      {name: '!서버상태', desc: '서버상태를 표기'},
+      {neme: '!명령어', desc: '@@아(이름),지건,딱대,쓰흡,준비됐어 지?,이잉,ㅋㅋ'}
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
       .setAuthor('Help of 괴물쥐 BOT', helpImg)
       .setColor('#186de6')
-      .setFooter(`괴물쥐 BOT`)
+      .setFooter(`괴물쥐 BOT *찬욱이가 만듬*`)
       .setTimestamp()
     
     commandList.forEach(x => {
