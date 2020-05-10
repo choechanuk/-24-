@@ -168,7 +168,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == "테스트") {
-  message.channel.send("A text to speech message from a bot.",)
+  message.channel.send("//tts A text to speech message from a bot.",)
     tts: true
    }
 
