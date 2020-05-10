@@ -37,9 +37,6 @@ client.on('message', (message) => {
   if(message.content == 'ping') {
     return message.reply('pong');
   }
-  if(message.content == "!명령어"){
-    return message.channel.send("ㅋㅋ,이잉,딱대,지건,**아(이름)");
-}
 
   if(message.content == "준비됐어 지?"){
     return message.channel.send("물론이지. 환 (괴물쥐 on)");
