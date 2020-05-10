@@ -166,6 +166,10 @@ client.on('message', (message) => {
   if(message.content == "승범아"){
     return message.channel.send("승메이커 출현");
   }
+  if(message.content == "테스트")
+  message.channel.send("A text to speech message from a bot.", {
+    tts: true
+   })
 
   if(message.content == '!서버상태') {
     let embed = new Discord.RichEmbed()
