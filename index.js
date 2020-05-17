@@ -167,8 +167,8 @@ client.on('message', (message) => {
     return message.channel.send("승메이커 출현");
   }
 
-  if(message.content == "테스트") {
-  message.channel.send("/tts A text to speech message from a bot.",)
+  if(message.content == "상훈") {
+  message.channel.send("자가격리14일남음",)
     tts: true
    }
 
