@@ -168,7 +168,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == "상훈이"){
-    return message.channel.send("승메이커 출현");
+    return message.channel.send("거북이 출현 \n 에~에~");
   }
 
   if(message.content == "상훈") {
