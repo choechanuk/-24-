@@ -129,7 +129,7 @@ client.on('message', (message) => {
     return message.channel.send("역겨워 부르지마");
   }
 
-  if(message.content =="지훈"){
+  if(message.content == "지훈"){
     return message.channel.send("넣을게...");
   }
 
@@ -172,7 +172,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == "상훈") {
-  message.channel.send("자가격리14일남음",)
+    return message.channel.send("자가격리14일남음",)
    }
 
    if(message.content == "화"){
