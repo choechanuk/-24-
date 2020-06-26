@@ -324,7 +324,7 @@ client.on('message', (message) => {
     }
   } else if(message.content.startsWith('!삭제')) {
     if(message.channel.type == 'dm') {
-      return message.reply('나한테 보내지마!!!!!!!!!!');
+      return message.reply('dm에서 사용할 수 없는 명령어 입니다.');
     }
     
     if(message.channel.type != 'dm' && checkPermission(message)) return
@@ -333,9 +333,9 @@ client.on('message', (message) => {
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
-      message.channel.send("1부터 100까지 숫자만 입력해라.")
+      message.channel.send("1부터 100까지만 입력해라")
       return;
-    } else if(!isNum) { // c @찬욱 3
+    } else if(!isNum) { 
       if(message.content.split('<@').length == 2) {
         if(isNaN(message.content.split(' ')[2])) return;
 
@@ -356,7 +356,7 @@ client.on('message', (message) => {
     } else {
       message.channel.bulkDelete(parseInt(clearLine)+1)
         .then(() => {
-          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "네이스~ 다 지워 버려~~~~~ (이 메세지는 잠시 후에 사라집니다.)");
+          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "네이스~ 다지워버려!!!!!!!!!!!!!!!!(잠시후 지워집니다.)");
         })
         .catch(console.error)
     }
