@@ -171,10 +171,6 @@ client.on('message', (message) => {
     return message.channel.send("나가");
   }
 
-  if(message.content == "용은이"){
-    return message.channel.send("수능 잘보고 ^%^");
-  }
-
   if(message.content == "그냥"){
     return message.channel.send("ㄹㅇ ㅋㅋ 만 쳐라");
   }
