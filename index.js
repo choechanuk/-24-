@@ -166,13 +166,17 @@ client.on('message', (message) => {
   if(message.content == "승범아"){
     return message.channel.send("승메이커 출현");
   }
-  
+
   if(message.content == "정우야"){
     return message.channel.send("나가");
   }
 
   if(message.content == "용은이"){
     return message.channel.send("수능 잘보고 ^%^");
+  }
+
+  if(message.content == "그냥"){
+    return message.channel.send("ㄹㅇ ㅋㅋ 만 쳐라");
   }
 
   if(message.content == '!서버상태') {
